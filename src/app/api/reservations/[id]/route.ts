@@ -2,8 +2,11 @@ import { NextResponse } from "next/server";
 import connectDB from "@/lib/db";
 import Reservation from "@/models/reservation";
 
-export async function DELETE(_req: Request, { params }: { params: unknown }) {
-  const { id } = await (params as Promise<{ id: string }>);
+export async function DELETE(
+  request: Request,
+  context: { params: { id: string } }
+) {
+  const { id } = context.params;
 
   await connectDB();
   const deleted = await Reservation.findByIdAndDelete(id);
