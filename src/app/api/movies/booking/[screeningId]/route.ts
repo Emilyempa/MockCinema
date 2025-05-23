@@ -5,9 +5,9 @@ import { movie } from "@/models/movies";
 
 export async function GET(
   request: Request,
-  { params }: { params: { screeningId: string } }
+  context: { params: Promise<{ screeningId: string }> }
 ) {
-  const screeningId = params.screeningId;
+  const { screeningId } = await context.params;
 
   try {
     await connectDB();
