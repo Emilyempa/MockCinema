@@ -15,10 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <head>
-        <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet' />
-      </head>
+    <html lang='en'>      
       <body>
         <Provider>
           <Header />

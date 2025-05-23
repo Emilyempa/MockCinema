@@ -7,7 +7,7 @@ export async function GET(
   request: Request,
   context: { params: { screeningId: string } }
 ) {
-  const resolvedParams = await context.params;
+  const resolvedParams = context.params;
   const screeningId = resolvedParams.screeningId;
 
   try {

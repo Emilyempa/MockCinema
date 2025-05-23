@@ -39,7 +39,10 @@ export async function POST(req: NextRequest) {
     newUser.save();
 
     return NextResponse.json({ created: true, message: 'Created!' }, { status: 201 });
-  } catch (error) {
-    return NextResponse.json({ created: false, message: 'Invalid credentials' }, { status: 406 });
+ } catch (error: unknown) {
+  if (error instanceof Error) {
+    console.error(error.message);
   }
+  return NextResponse.json({ created: false, message: 'Invalid credentials' }, { status: 406 });
+}
 }
