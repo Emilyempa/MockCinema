@@ -12,10 +12,10 @@ import {
 
 export async function GET(
   request: Request,
-  context: { params: { screeningId: string } }
+  context: { params: Promise<{ screeningId: string }> }
 ) {
-  const resolvedParams = await context.params;
-  const screeningId = resolvedParams.screeningId;
+  const params = await context.params;
+  const screeningId = params.screeningId;
 
   try {
     await connectDB();
