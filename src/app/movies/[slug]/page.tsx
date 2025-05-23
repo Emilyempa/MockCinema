@@ -2,8 +2,7 @@ import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 import MovieLayout from '@/components/movies/movie-details/MovieLayout';
 
-export default async function MovieDetailPage({ params }: { params: { slug: string } }) {
-  // Using await params here to silence Next.js warning about params.slug
+export default async function MovieDetailPage({ params }: { params: Promise<{ slug: string }> }) {  
   const resolvedParams = await params;
   const resolvedHeaders = await headers();
   const host = resolvedHeaders.get('host');
