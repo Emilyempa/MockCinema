@@ -3,6 +3,7 @@ import ScreeningSelector from "./ScreeningSelector";
 import ShowReviews from '@/components/movies/movie-details/ShowReviews';
 import PostReview from "./PostReview";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function MovieLayout({ movie, screenings }: any) {
   return (
     <div className="max-w-[1280px] mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-24 gap-6">
