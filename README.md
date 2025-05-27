@@ -40,7 +40,7 @@
 ### 4. Deploy the application.
 ### 5. Update next.config.js to resolve image rendering issues on Vercel
 ### 6. Fix dynamic routing issues to ensure the app worked correctly after deployment
-### 7. 
+### 7. Configure NEXT_PUBLIC_BASE_URL in Vercel to enable booking functionality.
 
 ## Visit at: https://mock-cinema-xi.vercel.app/
 
