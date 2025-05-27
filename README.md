@@ -1,6 +1,6 @@
 # Mock Cinema - A Movie Booking App
 
-## This project was developed as a team school assignment to demonstrate full-stack development skills using Next.js and MongoDB.
+### This project was developed as a team school assignment to demonstrate full-stack development skills using Next.js and MongoDB.
 
 
 #  Features
