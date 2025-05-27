@@ -11,6 +11,7 @@ export async function GET(
 
   try {
     await connectDB();
+
     const screening = await Screening.findById(
       screeningId
     ).lean<ScreeningType>();
@@ -35,7 +36,8 @@ export async function GET(
       movie: movieData,
       screenings: screeningsForThisMovie,
     });
-  } catch {
+  } catch (error) {
+    console.error(error);
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }

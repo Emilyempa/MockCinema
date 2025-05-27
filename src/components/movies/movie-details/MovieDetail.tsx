@@ -35,10 +35,11 @@ export default function MovieDetail({ movie }: MovieDetailProps) {
       <div className="flex flex-col md:flex-row gap-4">
         <Image
           src={movie.posterUrl}
-          alt={movie.title}
-          width={500} 
-          height={750} 
-          className="rounded-4xl w-full md:w-1/2 max-h-[550px] object-cover"
+          alt={movie.title || "Movieposter"}
+          width={400}
+          height={600}
+          loading="lazy"
+          className="rounded-4xl w-full md:w-1/2 max-h-[550px]"
         />
 
         <div className="bg-kino-darkgrey rounded-4xl p-4 text-lg leading-relaxed md:w-1/2 text-kino-white max-h-[550px]">

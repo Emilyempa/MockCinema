@@ -1,12 +1,11 @@
 import BookingManager from "./BookingManager";
 
-interface PageProps {
+export default async function BookingPage({
+  params,
+}: {
   params: Promise<{ screeningId: string }>;
-}
-
-export default async function BookingPage(props: PageProps) {
-  const resolvedParams = await props.params;
-  const screeningId = resolvedParams.screeningId;
+}) {
+  const { screeningId } = await params;
 
   return <BookingManager screeningId={screeningId} />;
 }

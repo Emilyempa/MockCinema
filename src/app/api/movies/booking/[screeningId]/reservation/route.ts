@@ -52,7 +52,7 @@ export async function POST(request: Request) {
       totalPrice,
       expiresAt,
     });
-   
+
     return NextResponse.json({
       success: true,
       reservationId: reservation._id,

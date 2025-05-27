@@ -36,7 +36,7 @@ const InfoMeber = () => {
       }
     }
 
-    if (session?.user.id) loadMovies();
+    loadMovies();
   }, [session?.user.id]);
 
   async function updateUser(userInfo: user) {
