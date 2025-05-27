@@ -20,7 +20,7 @@
 ### Static Pages – Information about the cinema, kids party, and a movie experience page.
 
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ### Frontend: Next.js, Tailwind CSS
 
