@@ -24,7 +24,7 @@
 
 ### Frontend: Next.js, Tailwind CSS
 
-### Backend: Next.js API Routes
+### Backend: Next.js API Routes (Built using REST API)
 
 ### Database: MongoDB (using Mongoose for schema modeling)
 
