@@ -15,7 +15,7 @@
 
 ### Reviews & Ratings – Dynamic reviews, Logged-in users can leave reviews and rate movies.
 
-### Dynamic Member Page where members can change contact info and see their upcoming bookings.
+### Dynamic Member Page – Where members can change contact info and see their upcoming bookings.
 
 ### Static Pages – Information about the cinema, kids party, and movie experience page.
 
