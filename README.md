@@ -9,15 +9,15 @@
 
 ### User Authentication – Sign up, log in, and manage your profile.
 
-### Booking System – Reserve seats to book a screenings.
+### Booking System – Reserve seats and book screenings with dynamic pricing for members.
 
-### Search Functionality – Find movies by title, genre, or release date.
+### Search Functionality – Find movies by title, genre, or screening date.
 
 ### Reviews & Ratings – Dynamic reviews, Logged-in users can leave reviews and rate movies.
 
-### Dynamic Member Page – Where members can change contact info and see their upcoming bookings.
+### Dynamic Member Page – Members can change contact info and see their upcoming bookings.
 
-### Static Pages – Information about the cinema, kids party, and movie experience page.
+### Static Pages – Information about the cinema, kids party, and a movie experience page.
 
 
 # 🛠 Tech Stack
